@@ -7,22 +7,36 @@ const UserProfileBanner = () => {
     <Box sx={{ mb: 3, display: 'flex', flexDirection: 'column' }}>
       <Box
         sx={{
-          mb: 1,
+          mb: 2,
           display: 'flex',
           flexDirection: { xs: 'column', md: 'row' },
           justifyContent: 'space-between',
           alignItems: { xs: 'flex-start', md: 'center' },
+          rowGap: 1,
         }}
       >
-        <Typography variant="h5">
+        <Typography
+          variant="h5"
+          sx={{ fontSize: { xs: '1.2rem', sm: '1.5rem' } }}
+        >
           Welcome back <span style={{ fontWeight: 'bold' }}>Devesh</span> !
         </Typography>
-        <Typography variant="caption" sx={{ color: '#757575' }}>
+        <Typography
+          variant="caption"
+          sx={{ color: '#757575', fontSize: { xs: '0.75rem', sm: '0.85rem' } }}
+        >
           Last login on 17 October 2024 at 10:12:30
         </Typography>
       </Box>
 
-      <Box sx={{ bgcolor: 'white', p: { xs: 2, sm: 3 }, borderRadius: 2, boxShadow: 1 }}>
+      <Box
+        sx={{
+          bgcolor: 'white',
+          p: { xs: 2, sm: 3 },
+          borderRadius: 2,
+          boxShadow: 1,
+        }}
+      >
         <Grid container spacing={{ xs: 2, sm: 3 }}>
           <ProfileField xs={12} sm={6} md={4} label="Full Name :" value="Devesh Bhanudas Patelkar" />
           <ProfileField xs={12} sm={6} md={4} label="Email ID :" value="deveshpatelkar@icloud.com" />
@@ -40,7 +54,3 @@ const UserProfileBanner = () => {
 };
 
 export default UserProfileBanner;
-
-
-
-
