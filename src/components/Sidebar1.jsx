@@ -37,16 +37,7 @@ const Sidebarnew = ({ onMobileClose = () => {} }) => {
       <UserProfile />
       <NavigationMenu onMobileClose={onMobileClose} />
       
-      <Box sx={{ mt: 'auto', p: 1 }}>
-        <Button 
-          variant="outlined" 
-          fullWidth 
-          endIcon={<LogoutIcon />} 
-          sx={{ color: 'white', borderColor: '#3d3d3d', justifyContent: 'space-between', textTransform: 'none' }}
-        >
-          Log Out
-        </Button>
-      </Box>
+     
     </Box>
   );
 };
