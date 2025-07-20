@@ -814,7 +814,8 @@ import {
   TrendingUp,
 
 } from 'lucide-react';
-
+import './index.css' // Make sure this line exists
+import './App.css' // Make sure this line exists
 // Mock Data
 const mockData = {
   users: [
